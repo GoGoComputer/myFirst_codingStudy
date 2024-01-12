@@ -39,3 +39,48 @@
 
 // 실행
 // add(1, 2); 
+
+
+
+// 입력, 출력 없을 수 있음 (코드를 묶어주기 위해 사용)
+
+  
+                // x
+                //------------------
+                //    FUNCTION f : |
+                //------------------
+                //              x 
+
+
+// 윈가디움레비오사 (  )
+// 어떤 마업
+// 함수
+// 코디의 묶음
+
+
+// 함수에요!!!
+
+// 입력값 없음
+function fly() {
+    openWings();
+    while (true) 
+        moveWings ();
+}
+
+// (return 이 없음)
+
+// fly()
+
+// 정의 
+function add (x, y) {
+    let temp = x + y;
+    return temp;
+}
+
+// 익명함수
+// {(x, y)} =>  return x + y; (1, 2)
+
+// add (x, y) = {
+//     let temp = x + y;
+//     return temp;
+
