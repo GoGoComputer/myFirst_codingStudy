@@ -1,3 +1,5 @@
+// 2_variable.js
+
 // 변수
 
 // var 변수명 
