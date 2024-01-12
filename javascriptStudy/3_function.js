@@ -1,5 +1,7 @@
 // 3_function.js
 
+'use strict';
+
 // 함수
 
 //f(x) = 2x + 3

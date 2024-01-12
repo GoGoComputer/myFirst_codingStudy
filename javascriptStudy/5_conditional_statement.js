@@ -1,4 +1,5 @@
 // 5_conditional_statement.js
+'use strict';
 
 // 조건문 conditional statement
 

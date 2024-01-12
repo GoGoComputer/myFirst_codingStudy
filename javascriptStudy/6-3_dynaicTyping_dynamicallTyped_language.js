@@ -1,5 +1,7 @@
 // 6-3_dynaicTyping_dynamicallTyped_language.js
 
+'use strict';
+
 // 이런 다이나믹 타이핑 언어는 내가 좋은 아니디어가 있을 때
 // 빠르게 프로토타입을 하고 싶은 경우 매우 유연하게 쓸 수 있는 언어이다.
 

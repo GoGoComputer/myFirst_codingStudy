@@ -1,4 +1,5 @@
 // 2_variable.js
+'use strict';
 
 // 변수
 
