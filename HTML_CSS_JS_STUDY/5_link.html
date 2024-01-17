@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크</title>
+</head>
+<body>
+    <h1>링크</h1>
+    <p>링크란 현제 문서에서 다른 문서로 이동 할 수 있는 것을 말합니다.</p>
+    
+<!-- 
+    HTML의 <a> 태그는 하이퍼링크를 생성하는 데 사용됩니다.
+        이 태그를 사용하여 사용자가 클릭할 수 있는 링크를 만들 수 있으며, 
+        이 링크는 다른 웹 페이지, 파일, 이메일 주소, 
+        위치 내 페이지 또는 웹 페이지의 다른 섹션으로 이동할 수 있습니다. 
+        <a> 태그의 주요 속성과 사용법에 대해 자세히 설명하겠습니다:
+
+        href 속성: 이것은 가장 중요한 속성으로, 링크의 목적지 URL을 지정합니다.
+        
+        예: <a href="https://www.example.com">Visit Example.com</a>
+        target 속성: 링크를 어디서 열지 결정합니다. 
+        가장 일반적인 값은 _blank (새 탭/창에서 열기)와 _self (현재 탭/창에서 열기)입니다.
+        
+        예: <a href="https://www.example.com" target="_blank">Open in new tab</a>
+        rel 속성: 현재 문서와 링크된 문서 간의 관계를 지정합니다. 
+        예를 들어, nofollow 값을 사용하여 검색 엔진이 링크를 따라가지 않도록 할 수 있습니다.
+        
+        예: <a href="https://www.example.com" rel="nofollow">Example</a>
+        title 속성: 추가 정보를 제공하는 텍스트를 지정합니다. 
+        이 텍스트는 사용자가 링크 위에 마우스를 올렸을 때 표시됩니다.
+        
+        예: <a href="https://www.example.com" title="Go to Example.com">Visit Example</a>
+        id 및 class 속성: CSS 스타일링이나 JavaScript 상호작용을 위해 사용됩니다.
+        
+        메일 링크 생성: mailto:를 사용하여 이메일 주소로 직접 링크를 만들 수 있습니다.
+        
+        예: <a href="mailto:someone@example.com">Send Email</a>
+        앵커 링크: 페이지 내 특정 섹션으로 이동하기 위해 앵커 링크를 사용할 수 있습니다. 
+        이를 위해 id 속성이 있는 요소를 대상으로 합니다.
+        
+        예: <a href="#section1">Go to Section 1</a>
+        <a> 태그는 웹 페이지의 내비게이션과 상호작용에 필수적인 요소입니다. 
+            이를 통해 사용자가 웹사이트 내외부로 쉽게 이동할 수 있게 해줍니다. -->
+
+   <!--  a 테그 인라인 요소입니다 href 속성을 사용하여 링크를 걸 수 있습니다. -->
+
+    <div>
+    <a href ="https://github.com/GoGoComputer/myFirst_codingStudy" target="_self">
+    깃허브 현재 텝에서 열기 </a>
+    <br>
+    <a href ="https://github.com/GoGoComputer/myFirst_codingStudy" target="_blank">
+    깃허브 새 텝에서 열기 </a>
+    </div>
+
+    <div>
+    <a href ="tel:010-1234-5678" target="_self"> 전화 걸기 </a>
+    <br>
+    <a href ="mailto: xxxx@xxx.x" target="_blank"> 이메일 보내기 </a>
+    </div>
+
+    <div>
+    <a href ="https://github.com/GoGoComputer/myFirst_codingStudy" target="_self">
+    <img src = "3_image_tag_exImg.png" alt="깃허브로 가는 링크" width="100" 
+    title = "깃허브로 가는 링크"> </a>
+    <br>
+    <a href ="0_hello.html" target="_blank"> 0_hello.html 로 갑니다. </a>
+
+    <!-- href 꼭 웹페이지 링크가 아니여도 된다. -->
+
+    
+<!-- <a href>는 HTML에서 하이퍼링크를 생성하는 데 사용되는 태그입니다. 
+    이 태그를 사용하여 텍스트나 이미지에 링크를 추가할 수 있으며, 
+    클릭하면 사용자가 다른 페이지나 웹사이트로 이동할 수 있습니다. 기본 구조는 다음과 같습니다:
+
+    html
+    Copy code
+    <a href="URL">링크 텍스트 또는 이미지</a>
+    여기서 href 속성은 링크의 목적지를 지정합니다. 
+    이는 다른 웹페이지의 URL일 수도 있고, 
+    같은 페이지 내의 특정 섹션을 가리키는 앵커(#을 사용하는 내부 링크)일 수도 있습니다. 
+    링크 텍스트 또는 이미지는 사용자가 클릭할 수 있는 부분입니다.
+    
+    예시:
+    
+    외부 링크: 다른 웹사이트로 연결하는 링크.
+    
+    html
+  
+    <a href="https://www.example.com">방문하기</a>
+    내부 링크: 같은 페이지 내의 특정 섹션으로 이동하는 링크.
+    
+    html
+
+    <a href="#section1">섹션 1로 이동</a>
+    이메일 링크: 이메일 클라이언트를 열어 사용자가 이메일을 보낼 수 있게 하는 링크.
+    
+    html
+ 
+    <a href="mailto:someone@example.com">이메일 보내기</a>
+    전화번호 링크: 스마트폰에서 전화 앱을 열어 전화번호로 전화를 걸 수 있게 하는 링크.
+    
+    html
+
+    <a href="tel:+123456789">전화하기</a>
+
+    <a href> 태그는 웹 개발에서 매우 기본적이지만 중요한 요소로, 
+    웹사이트의 내부 및 외부 네비게이션에 핵심적인 역할을 합니다. -->
+    
+
+
+</body>
+</html>
