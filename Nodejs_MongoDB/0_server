@@ -11,3 +11,121 @@
 어떤 사람이 /list 를 GET 요청하면...
 해당하는 list.html 파일을 보내줌
 
+
+
+우분투에서 자바스크립트 가상환경을 사용하려면 다음 단계를 수행합니다.
+
+
+
+
+
+
+Node.js를 설치합니다. Node.js는 자바스크립트 가상환경을 만드는 데 필요한 기본 런타임 환경입니다. 
+Node.js를 설치하려면 다음 명령을 실행합니다.
+Bash
+sudo apt install nodejs
+
+npm을 설치합니다. npm은 Node.js의 패키지 관리자입니다. npm을 설치하려면 다음 명령을 실행합니다.
+Bash
+sudo apt install npm
+
+
+가상환경을 만듭니다. 다음 명령을 실행하여 가상환경을 만듭니다.
+Bash
+npm init -y
+
+
+이 명령을 실행하면 package.json 파일이 생성됩니다. package.json 파일에는 프로젝트의 종속성이 기록됩니다.
+
+가상환경을 활성화합니다. 다음 명령을 실행하여 가상환경을 활성화합니다.
+Bash
+npm run env
+
+이 명령을 실행하면 .envrc 파일이 생성됩니다. .envrc 파일에는 가상환경의 환경 변수가 기록됩니다.
+
+필요한 패키지를 설치합니다. 다음 명령을 실행하여 필요한 패키지를 설치합니다.
+Bash
+npm install <패키지명>
+
+예를 들어, express 패키지를 설치하려면 다음 명령을 실행합니다.
+
+Bash
+npm install express
+
+프로젝트를 실행합니다. 다음 명령을 실행하여 프로젝트를 실행합니다.
+Bash
+npm start
+
+이 명령을 실행하면 프로젝트의 package.json 파일에 정의된 start 스크립트가 실행됩니다.
+
+
+
+예제
+
+다음은 우분투에서 자바스크립트 가상환경을 사용하는 예입니다.
+
+Bash
+# Node.js를 설치합니다.
+sudo apt install nodejs
+
+# npm을 설치합니다.
+sudo apt install npm
+
+# 가상환경을 만듭니다.
+npm init -y
+
+# 가상환경을 활성화합니다.
+npm run env
+
+# express 패키지를 설치합니다.
+npm install express
+
+# 프로젝트를 실행합니다.
+npm start
+
+이 예제에서는 express 패키지를 사용하여 간단한 웹 서버를 만듭니다.
+
+JavaScript
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+app.listen(3000, () => {
+  console.log('서버가 시작되었습니다.');
+});
+
+이 코드를 index.js 파일에 저장합니다. 그런 다음 다음 명령을 실행하여 프로젝트를 실행합니다.
+
+Bash
+npm start
+코드를 사용할 때는 주의하시기 바랍니다. 자세히 알아보기
+이 명령을 실행하면 다음과 같은 결과가 표시됩니다.
+
+서버가 시작되었습니다.
+웹 브라우저에서 http://localhost:3000으로 이동하면 다음과 같은 결과가 표시됩니다.
+
+Hello, world!
+가상환경 관리
+
+가상환경을 관리하려면 다음 명령을 사용할 수 있습니다.
+
+가상환경 목록 보기: npm list -g
+가상환경 활성화: npm run env
+가상환경 비활성화: deactivate
+팁
+
+프로젝트마다 별도의 가상환경을 사용하는 것이 좋습니다. 이렇게 하면 프로젝트의 종속성 문제를 방지하고 다른 프로젝트에 영향을 미치지 않고 개발을 진행할 수 있습니다.
+가상환경을 활성화할 때는 source 명령을 사용하는 것이 좋습니다. source 명령을 사용하면 가상환경의 환경 변수가 현재 환경에 적용됩니다.
+가상환경을 비활성화할 때는 deactivate 명령을 사용하는 것이 좋습니다. deactivate 명령을 사용하면 가상환경의 환경 변수가 현재 환경에서 제거됩니다.
+
+
+
+
+
+
+
+

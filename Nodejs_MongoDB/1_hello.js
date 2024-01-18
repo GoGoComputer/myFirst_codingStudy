@@ -15,6 +15,8 @@
 
 
 
+// 서버로 get 요청 처리 하는 법
+
 const express = require('express')
 const app = express()
 
@@ -43,3 +45,11 @@ app.get('/pet', function(요청, 응답){
 
 // 브라우져에 펫용품 쇼핑 사이트 입니다. 라고 뜸!
 
+// terminal: npm install -g nodemon 자동어로 서버 껏다 켰다 함
+
+// terminal: nodemon 1_hello.js
+
+// 보안오류 인 경우 파워 쉘 에서 관리자 권한으로 실행해서 사용한다. 그리고
+// executionpolicy 라고 적고 Restricted 라고 되어 있으면 문제가 있는 것.
+// powshell: set-executionpolicy unrestricted 
+// 그 후 실행 규칙 변경 하기 (y)

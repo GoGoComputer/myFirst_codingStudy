@@ -6,6 +6,7 @@ github를 사용하다 보면 특정 파일을 삭제해야 하는 경우가 생
 history를 삭제하려면 다음 명령어를 입력하면 된다.
 
 git filter-branch --force --index-filter "git rm --cached --ignore-unmatch 'file_path/file_name'" --prune-empty --tag-name-filter cat -- --all
+# ex) git filter-branch --force --index-filter "git rm --cached --ignore-unmatch 'file_path/Nodejs_MongoDB'" --prune-empty --tag-name-filter cat -- --all
 file_name에는 history를 지우고 싶은 파일 이름과 확장자를 작성하면 된다.
 
 file_path에는 history를 지우고 싶은 파일의 경로를 작성하면 된다. 경로는 root부터 전부 다 작성하도록 한다.
@@ -14,7 +15,8 @@ file_path에는 history를 지우고 싶은 파일의 경로를 작성하면 된
 
 다음 명령어를 입력하여 새로 만들어진 history를 강제로 적용하면 된다.
 
-git push origin master --force
+git push origin main --force
+
 같은 실수를 반복하지 않으려면 .gitignore에 push되면 안 되는 파일을 저장하고 push 한다.
 
 .gitignore 파일에 push되면 안 되는 파일을 저장한다.

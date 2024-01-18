@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    
+<!-- HTML의 <form> 태그는 사용자 입력을 수집하는 데 사용되는 웹 양식을 정의하는 데 사용됩니다. 
+이 태그를 사용하여 사용자로부터 정보를 수집하고 서버에 제출할 수 있습니다. 
+여기에는 여러 가지 요소가 포함될 수 있으며, 
+각 요소는 사용자에게 다양한 형식의 입력을 요청합니다. -->
+
+    기본 구조
+   
+    <form action="submit_to_url" method="post">
+        <!-- form elements like input, select, textarea, etc. -->
+    </form>
+
+
+
+   <!--  주요 속성
+    action: 양식 데이터가 제출될 서버의 URL을 지정합니다.
+    method: 데이터를 서버로 전송하는 방법을 지정합니다. 주로 get 또는 post입니다.
+    get: URL을 통해 데이터를 전송합니다. 주로 검색 쿼리나 필터링에 사용됩니다.
+    post: 데이터를 요청 본문에 포함하여 전송합니다. 민감한 데이터 전송에 사용됩니다.
+    일반적인 양식 요소
+    <input>: 다양한 유형의 데이터 입력을 위한 필드를 생성합니다. 예를 들어 텍스트, 비밀번호, 라디오 버튼 등이 있습니다.
+    <textarea>: 여러 줄의 텍스트 입력을 위한 공간을 제공합니다.
+    <button>: 사용자가 클릭할 수 있는 버튼을 생성합니다. 제출, 리셋 등의 다양한 기능을 가질 수 있습니다.
+    <select>: 드롭다운 목록을 통해 사용자가 옵션을 선택할 수 있게 합니다.
+    <label>: 입력 필드에 라벨을 추가하여 사용자 인터페이스의 접근성과 사용성을 향상시킵니다.
+    예제 -->
+<div>
+    <form action="/submit-data" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <input type="submit" value="Submit">
+      
+    </form>
+</div>
+
+<!--     이 예제에서는 사용자 이름을 입력받아 서버의 "/submit-data" URL로 전송하는 간단한 양식을 보여줍니다.
+    
+    양식을 사용하면 웹사이트에서 사용자의 데이터를 효율적으로 수집하고 처리할 수 있습니다. 
+    디자인과 사용성을 고려하여 사용자에게 친숙한 인터페이스를 제공하는 것이 중요합니다. -->
+
+<div>
+    <form action = "8-1_example.php" method="post" > <!-- exammple.php로 데이터를 전송합니다. -->
+       <!--  get 서버로부터 정보를 가저 올 때 사용
+        post 서버로 정보를 전송할 때 사용 -->
+
+        <input type = "text" placeholder="아이디">
+        <br>
+        <input type = "password" placeholder="비밀번호">
+        <br>
+        <input type = "submit" value="로그인">
+    </form>
+</div>
+<br>
+
+<div>
+    <h1>회원가입</h1>
+    <form action = "8-1_example.php" method="post" >
+        <input type = "text" placeholder="아이디">
+        <br>
+        <input type = "password" placeholder="비밀번호">
+        <br>
+        <input type = "password" placeholder="비밀번호 확인">
+        <br>
+        <input type = "text" placeholder="이름">
+        <br>
+        <input type = "text" placeholder="이메일">
+
+        <br>
+        <select name="pet" id="">
+            <option value="dog">강아지</option>
+            <option value="cat">고양이</option>
+            <option value="rabbit">토끼</option>
+            <option value="turtle">거북이</option>
+            <option value="hamster">햄스터</option>
+            <option value="parrot">앵무새</option>
+            <option value="snake">뱀</option>
+        </select>
+        <br>
+        <input type = "submit" value="회원가입">
+
+    </form>
+
+</div>
+
+</body>
+</html>
