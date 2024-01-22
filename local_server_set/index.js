@@ -3,7 +3,7 @@
 루트 폴더에 public 폴더 만들고 그 안에 html 파일 넣기
 
 terminal: npm install express 
-terminal: npm install nodemon
+terminal: npm -g install nodemon
 */
 
 const express = require('express');
